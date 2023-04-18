@@ -1,0 +1,18 @@
+.oculto {
+    display: none;
+}
+
+
+i{
+   font-size: 50px;
+   color: #6a6e71;
+   border: transparent;}
+
+   
+   i {transition: all 0.3s ease-in-out;}
+
+
+
+   i:hover {
+    color: #13a76b;
+    transform: scale(1.4);}

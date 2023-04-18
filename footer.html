@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="footer.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="plugin/components/Font Awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="plugin/whatsapp-chat-support.css">
+  <title>footer</title>
+</head>
+
+<body>
+  <footer style="background: linear-gradient(45deg, #1a3f30,#13a76b)">
+    <div class="footerContainer">
+      <div class="socialIcons">
+        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i> </a>
+        <a href="https://www.instagram.com/" target="_blank"> <i class="fa-brands fa-instagram"></i> </a>
+        <a href="https://twitter.com/login" target="_blank"> <i class="fa-brands fa-twitter"></i> </a>
+        <a href="https://www.youtube.com/" target="_blank"> <i class="fa-brands fa-youtube"></i> </a>
+      </div>
+      <div class="footerNav">
+        <ul>
+          <li><a href="index.html" id="efectoslink2"> Home </a></li>
+          <li><a href="sugerencias.html" id="efectoslink2"> Sugerencias </a></li>
+          <li><a href="contact.html" id="efectoslink2"> Contactanos </a></li>
+          <li><a href="desarrolladores.html" id="efectoslink2">Desarrolladores</a></li>
+        </ul>
+      </div>
+    </div>
+    
+   
+    
+
+  </script>
+    <div class="footerbotton">
+      <div class='main'>
+        <div class="sweet">
+            <p id="palabra">Fl</p>
+            <img src="/img/f1.png" class="img1 ani_img" id="flores"></img>
+            <img src="/img/f0.png" class="img2 ani_img" id="flores"></img>
+            <p id="palabra">Wer</p>
+        </div>
+       
+    </div>
+    <script>
+        const CookiesArray = [
+        "img/f8.png",
+            "img/f9.png",
+            "img/f0.png",
+            "img/f1.png",
+            "img/f2.png",
+            "img/f3.png",
+            "img/f4.png",
+            "img/f5.png",
+            "img/f6.png",
+            "img/f7.png",
+            "img/f8.png",
+            "img/f9.png",
+  ];
+  
+  const img1 = document.querySelector(".img1");
+  const img2 = document.querySelector(".img2");
+  
+  // Llamar a la función RandomCookies una vez para establecer las imágenes iniciales
+  RandomCookies(CookiesArray);
+  
+  // Cambiar automáticamente las imágenes cada 2 segundos
+  setInterval(() => {
+  RandomCookies(CookiesArray);
+  }, 2000);
+  
+  function RandomCookies(array) {
+    img1.classList.add('flipInX');
+    img2.classList.add('flipInX');
+    let randomNum = Math.floor(Math.random() * array.length);
+    img1.setAttribute("src", array[randomNum]);
+    img2.setAttribute("src", array[Math.floor(Math.random() * array.length)]);
+  }
+  
+  // Restablecer las animaciones de las imágenes después de que cambien automáticamente
+  function resetAnimations() {
+    img1.classList.remove('flipInX');
+    img2.classList.remove('flipInX');
+  }
+  
+  // Llamar a la función resetAnimations después de cada cambio de imagen
+  img1.addEventListener('animationend', resetAnimations);
+  img2.addEventListener('animationend', resetAnimations);
+</script>  
+    
+      <p>
+        Copyright &copy;2023 - Designed by
+        <span class="designer">Floowers</span>
+      </p>
+    </div>
+    <!-- Estructura Whatsapp boton -->
+    <div class="whatsapp_chat_support wcs_fixed_right" id="button-w">
+      <div class="wcs_button_label">
+        Contáctanos
+      </div>
+      <div class="wcs_button wcs_button_circle">
+        <span class="fa fa-whatsapp"></span>
+      </div>
+
+      <div class="wcs_popup">
+        <div class="wcs_popup_close">
+          <span class="fa fa-close"></span>
+        </div>
+        <div class="wcs_popup_header">
+          <span class="fa fa-whatsapp"></span>
+          <strong>Vivero Flower</strong>
+
+          <div class="wcs_popup_header_description">Disponible (Dom-Vier "7:00-22:30")-(Sabados "9:00-18:30") </div>
+
+        </div>
+        <div class="wcs_popup_input" data-number="543492250764"
+          data-availability='{ "monday":"07:00-22:30", "tuesday":"07:00-22:30", "wednesday":"07:7030-22:30", "thursday":"07:00-22:30", "friday":"07:00-22:30", "saturday":"07:00-18:30", "sunday":"09:00-22:30" }'>
+          <input type="text" placeholder="en que te puedo ayudar?" />
+          <i class="fa fa-play"></i>
+        </div>
+        <div class="wcs_popup_avatar">
+          <img src="/img/logos/icono-whatsapp.jpg" alt="asistenteDz">
+        </div>
+      </div>
+    </div>
+
+
+    <!-- jQuery 1.8+ -->
+    <script src="plugin/components/jQuery/jquery-1.11.3.min.js"></script>
+    <!-- Plugin JS file -->
+    <script src="plugin/components/moment/moment.min.js"></script>
+    <script src="plugin/components/moment/moment-timezone-with-data.min.js"></script> <!-- lenguaje español (es) -->
+    <script src="plugin/whatsapp-chat-support.js"></script>
+    <script>
+      $('#button-w').whatsappChatSupport({
+        defaultMsg: '',
+      });
+    </script>
+  </footer>
+</body>
+
+</html>

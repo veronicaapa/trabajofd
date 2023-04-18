@@ -1,0 +1,37 @@
+.oculto {
+    display: none;
+    
+}
+
+
+#btnMostrarDiscord {
+    background-color: transparent;
+    text-align: center;
+    font-size: 50px;
+    align-content: center;
+ margin-top: 2%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    color: linear-gradient(45deg, #1a3f30,#13a76b);
+    border: transparent;
+   
+   
+
+}
+
+
+#btnMostrarDiscord:hover {
+     transform: scale(1.2);
+     color: blueviolet;}
+
+     
+       
+     
+
+ #titulodiscord{
+    margin-top: 10%;
+    color:black;
+background-color: transparent;
+}
+

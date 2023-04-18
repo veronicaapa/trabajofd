@@ -1,0 +1,398 @@
+/* GENERAL PARA TODOS*/ 
+
+body{
+    background-color: #EDEAE5;
+    overflow-x: hidden;
+}
+
+#botón-primario{
+    background-color: #13a76b;
+    border: none;
+}
+    
+#botón-primario:hover {
+    transform: scale(1.05);
+}
+
+#botón-secundario{
+    background-color: #6a6e71;
+    border: none;
+}
+    
+#botón-secundario:hover {
+    transform: scale(1.05);
+}
+
+
+/* CURSOS */
+
+#solapa-activa {
+    color: #13a76b;
+}
+
+#solapa-cerrada {
+    color: #6a6e71;
+}
+
+#solapa-cerrada:hover {
+    color: #13a76b;    
+}
+
+#título-curso {
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+#másinfo {
+    background-color: #13a76b;
+    border: none;
+}
+
+#másinfo:hover {
+    transform: scale(1.05);
+}
+
+#descripción {
+    padding: 25px;
+}
+
+.accordion-button {
+    border-color: #13a76b;
+}
+
+.accordion-body {
+    background-color: #8de4af;
+}
+
+/* FIN DE CURSOS */
+
+
+/*=============
+  Efectos LINKS
+===============*/
+
+#efectoslink {
+    display: inline-block;
+    position: relative;
+    color: #edeae5;
+    text-decoration: none;
+    font-weight: 700;
+    }
+    #efectoslink:after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    transition: all .8s;
+    }
+    #efectoslink:hover:after {
+    width: 100%;
+    background: #226292;
+    }
+
+    #efectoslink2 {
+        
+        display: inline-block;
+        position: relative;
+        color: #222629;
+        text-decoration: none;
+        padding: 0 4px;
+        font-weight: 600;
+        }
+        #efectoslink2:before,
+        #efectoslink2:after {
+            
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        transform: scale(0);
+        transition: 0.5s;
+        }
+        #efectoslink2:before {
+        border-bottom: 2px solid #6a6e71;
+        border-left: 2px solid #6a6e71;
+        transform-origin: 0 100%;
+        }
+        #efectoslink2:after {
+        border-top: 2px solid #6a6e71;
+        border-right: 2px solid #6a6e71;
+        transform-origin: 100% 0%;
+        }
+        #efectoslink2:hover:after,
+        #efectoslink2:hover:before {
+            transition: all 1000ms ease-in-out;
+        transform: scale(1);
+        }
+
+
+.capa {color:#EDEAE5}
+
+
+/* Formulario Wizard */
+
+.multi {
+ background-color: #8de4af;
+ border-radius: 10px;
+ box-shadow: 4px 4px 4px #565a5d;
+}
+
+.step {  
+    display: none; 
+}
+
+.step.active {  
+    display: block;
+}
+
+.datoform{
+    background-color: #EDEAE5 !important; 
+    border: 1px solid #222629 !important;
+/*    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; */
+}
+
+/* Fin Formulario Wizard */
+
+
+/* FORMULARIO CONTACTO*/
+
+#formc{
+    height: 100%; 
+    color:#222629;
+    background-color:#EDEAE5; 
+  }
+  
+  #formcon{
+    width: 460px; 
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;  
+    padding-top: 30px;
+    padding-bottom: 20px;  
+    background-color: #8DE4AF;
+    padding-left: 30px; 
+  }
+  
+  #formtit1{
+    font-size: 20px;  
+    text-align: left; 
+    padding-bottom: 20px; 
+  }
+  
+  #formtit3{
+    font-size: 10px; 
+    padding-bottom: 30px;
+  }
+  
+  #formp{
+    font-size: 14px;  
+  }
+  
+  #datoform{
+    background-color: #EDEAE5; 
+    width: 405px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #222629; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #mensaje{
+    background-color: #EDEAE5; 
+    width: 405px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #222629; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+  }
+  
+  #botonform{
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    background-color: #EDEAE5; 
+    border-color: #222629; 
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 405px;   
+    cursor: pointer;
+  }
+  
+  #campo1{
+    font-size: 13px; 
+  }
+
+  /* FIN DE FORMULARIO CONTACTO */
+
+
+/*megusta logo*/
+
+.main {
+   
+    height: 10%;
+    
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.sweet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+#palabra {
+    font-family: "Rubik Iso", cursive;
+ font-size: 50px;
+    text-align: center;
+    text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
+        0 0 200px #0072ff;
+    color: #fff;
+}
+
+#flores {
+    max-height: 40px;
+    margin: 5px;
+    transition: all 0.3s ease-in-out;
+    animation-duration: 0.8s;
+}
+
+#btnmegusta {
+    color: #fff;
+    background-color: #222222;
+    
+ border-radius: 20px;
+    
+
+    text-shadow: 0 0 5px #0072ff, 0 0 10px #0072ff, 0 0 15px #0072ff,
+        0 0 20px #0072ff;
+    box-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff,
+        #0072ff 10px 20px 60px -12px inset;
+    cursor: grab;
+}
+
+
+@-webkit-keyframes flipInX {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    50% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        opacity: 1;
+    }
+
+    80% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+@keyframes flipInX {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    40% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    60% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        opacity: 1;
+    }
+
+    80% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+.flipInX {
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: flipInX;
+    animation-name: flipInX;
+}
+
+/*-------------------discord----------------------------*/
+
+
+/* DESARROLLADORES */
+
+#Cdesarrolladores{
+    
+    font-family: 'Poppins', sans-serif;
+    background: rgb(83, 84, 84);
+background: linear-gradient(0deg, rgb(210, 215, 215) 0%, rgb(69, 68, 74) 100%);
+
+}
+.card-img-top{
+    width: 200px;
+    height: 400px;
+    object-fit: cover;
+    margin: auto;
+    
+}
+.card{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    border-radius: 0;
+    padding: 20px;
+    border: none;
+}
+.bi{
+    font-size: 25px;
+    color: rgb(36, 33, 65);
+    
+}
+
+.bi:hover{
+    cursor: pointer;
+    color: black;
+}
+
+/* FIN DE DESARROLLADORES */
